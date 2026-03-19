@@ -100,8 +100,8 @@ Machine learning system for predicting stock market movements using Python. Appl
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=JoacoMarc&show_icons=true&theme=tokyonight&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JoacoMarc&layout=compact&langs_count=7&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats-three-sooty-83.vercel.app/api?username=JoacoMarc&show_icons=true&theme=tokyonight&count_private=true&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats-three-sooty-83.vercel.app/api/top-langs/?username=JoacoMarc&layout=compact&langs_count=7&theme=tokyonight&count_private=true&include_org_repos=true&hide_border=true"/>
 
 </div>
 
