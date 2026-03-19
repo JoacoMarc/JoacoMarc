@@ -98,12 +98,6 @@ Machine learning system for predicting stock market movements using Python. Appl
 
 ## 📊 GitHub Stats
 
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats-three-sooty-83.vercel.app/api?username=JoacoMarc&show_icons=true&theme=tokyonight&count_private=true&hide_border=true"/>
-
-
-</div>
 
 <div align="center">
 
