@@ -1,0 +1,20 @@
+{
+  "name": "claude-usage-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tracker de tokens y costo estimado de Claude Code, consolidado entre varias máquinas vía un repo git privado.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "export": "node src/export.js",
+    "sync": "node src/sync.js",
+    "serve": "node src/serve.js",
+    "test": "node --test test/*.test.js",
+    "build": "node src/build.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1"
+  }
+}

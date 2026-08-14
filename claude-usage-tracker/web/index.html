@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consumo de Claude</title>
+    <!-- Favicon inline: evita un request extra y un archivo más en el repo. -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230e1116'/%3E%3Crect x='3' y='8' width='2.5' height='5' fill='%23d97757'/%3E%3Crect x='6.75' y='5' width='2.5' height='8' fill='%234ec9a5'/%3E%3Crect x='10.5' y='3' width='2.5' height='10' fill='%236ea8fe'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Consumo de Claude</h1>
+        <p class="subtitle" id="scope">Cargando…</p>
+      </div>
+      <div class="machines" id="machines"></div>
+    </header>
+
+    <main id="app" hidden>
+      <section class="filters" aria-label="Filtros">
+        <div class="field">
+          <label>Período</label>
+          <div class="segmented" id="preset"></div>
+        </div>
+        <div class="field">
+          <label>Granularidad</label>
+          <div class="segmented" id="granularity"></div>
+        </div>
+        <div class="field">
+          <label for="from">Desde</label>
+          <input type="date" id="from" />
+        </div>
+        <div class="field">
+          <label for="to">Hasta</label>
+          <input type="date" id="to" />
+        </div>
+        <div class="field grow">
+          <label>Proyecto</label>
+          <div class="chips" id="projects"></div>
+        </div>
+        <div class="field grow">
+          <label>Modelo</label>
+          <div class="chips" id="models"></div>
+        </div>
+        <div class="field grow">
+          <label>Máquina</label>
+          <div class="chips" id="machineFilter"></div>
+        </div>
+        <div class="field">
+          <label>Subagentes</label>
+          <label class="switch">
+            <input type="checkbox" id="includeSidechain" checked />
+            <span>Incluir</span>
+          </label>
+        </div>
+      </section>
+
+      <p class="warning" id="warning" hidden></p>
+
+      <section class="kpis" id="kpis"></section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Gasto en el tiempo</h2>
+          <div class="segmented small" id="stackBy"></div>
+        </div>
+        <div class="chart"><canvas id="timeseries"></canvas></div>
+      </section>
+
+      <div class="grid-2">
+        <section class="panel">
+          <h2>Mix de modelos</h2>
+          <div id="modelMix"></div>
+        </section>
+        <section class="panel">
+          <h2>Proyectos</h2>
+          <div id="projectMix"></div>
+        </section>
+      </div>
+
+      <div class="grid-2">
+        <section class="panel">
+          <h2>Cache</h2>
+          <div id="cache"></div>
+        </section>
+        <section class="panel">
+          <h2>Detalle de consumo</h2>
+          <div id="extras"></div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h2>Cuándo trabajás</h2>
+        <p class="hint">Costo por día de la semana y hora, en hora local de cada máquina.</p>
+        <div id="heatmap"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Sesiones más caras</h2>
+        <div id="sessions"></div>
+      </section>
+    </main>
+
+    <div class="empty" id="empty" hidden>
+      <h2>Todavía no hay datos</h2>
+      <p>Corré <code>node src/export.js</code> en esta máquina y recargá.</p>
+    </div>
+
+    <!-- Build UMD: expone `Chart` como global y evita resolver módulos en el browser.
+         Los scripts clásicos corren antes que los módulos, así que app.js ya lo tiene. -->
+    <script src="/vendor/chart.umd.min.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

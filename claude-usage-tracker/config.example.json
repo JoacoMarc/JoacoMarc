@@ -1,0 +1,10 @@
+{
+  "machine": "joaco-mac",
+
+  "trackAccount": "tu-cuenta@ejemplo.com",
+
+  "includeEmail": false,
+
+  "logRoot": null,
+  "port": 4000
+}

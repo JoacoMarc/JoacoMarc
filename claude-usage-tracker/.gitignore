@@ -1,0 +1,23 @@
+node_modules/
+
+# Config por máquina: cada una tiene su alias, su plan y su cuenta.
+config.json
+
+# Cache del parser: offsets y buckets por archivo. Es por máquina y se reconstruye solo.
+.cache/
+
+# Log del hook.
+hooks/track-usage.log
+
+# Red de contención: los logs crudos de Claude Code tienen el texto completo de tus
+# prompts y respuestas. Nunca deberían llegar acá, pero si alguna vez copiás uno al
+# repo por error, que git no lo levante.
+*.jsonl
+.claude/
+.claude.json
+
+.DS_Store
+Thumbs.db
+
+# Salida del build estático.
+dist/
