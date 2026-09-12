@@ -5,7 +5,7 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joaquin-marcoff/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joacomarcoff@gmail.com)
+[![Email](https://img.shields.io/badge/joacomarcoff@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joacomarcoff@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JoacoMarc)
 [![Location](https://img.shields.io/badge/Buenos_Aires%2C_AR-2E8B57?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
 
@@ -200,7 +200,7 @@ Robotics lab material and research archive for UADE courses using Unitree robots
 
 <br/><br/>
 
-<img src="https://ghchart.rshah.org/A9FEF7/JoacoMarc" alt="Contribution Graph" width="100%" />
+<img src="https://ghchart.rshah.org/2563EB/JoacoMarc" alt="Contribution Graph" width="100%" />
 
 </div>
 
