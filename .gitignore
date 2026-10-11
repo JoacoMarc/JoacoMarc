@@ -1,0 +1,6 @@
+
+# Material de difusión del tracker: se genera acá por comodidad pero este repo es
+# público y el perfil no es el lugar para cifras de consumo ni para notas internas.
+# El demo versionado vive en el repo privado del tracker.
+tracker-demo.*
+post-linkedin.md
